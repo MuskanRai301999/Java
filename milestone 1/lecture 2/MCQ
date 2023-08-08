@@ -1,0 +1,22 @@
+1. Short data type has a minimum value of -
+Short is of 16 bits. Here, 1 bit is used to store the sign and the remaining 15 bits for the value.  So the smallest value a short data type can store is : - 2^15., where 2^15 is -32,768.
+
+2. Range of byte data type is ?
+  Range of byte(8 bits) is : -2^7 to 2^7-1
+
+3. Will following statement give an error ?
+   float f = 1.4;
+  System treats all decimal numbers as double by default. So 1.4 is stored as double(which is of 8 bytes). When we will try put a double into a float(which is of 4 bytes), it will give you error.
+
+4. What will be the output of the following statement ?
+System.out.println('a' + 1);
+
+When you add a character and an int, it will add the ASCII value of  char ‘a’ i.e 97  and int 1. So ans will be 98.
+
+5. What will be the output ?
+   int i = 'c';
+   System.out.println(i);
+   When we put char ‘c’ into an int, its ASCII value will be put in the int i.e. 99.
+
+6. Automatic type conversion in Java takes place when :
+    two type are compatible and sixe of destination type is larger than the source type
