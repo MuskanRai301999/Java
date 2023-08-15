@@ -1,0 +1,67 @@
+Find power of a number
+Send Feedback
+Write a program to find x to the power n (i.e. x^n). Take x and n from the user. You need to print the answer.
+Note : For this question, you can assume that 0 raised to the power of 0 is 1
+
+
+Input format :
+Two integers x and n (separated by space)
+Output Format :
+x^n (i.e. x raise to the power n)
+Constraints:
+0 <= x <= 8 
+0 <= n <= 9
+Sample Input 1 :
+ 3 4
+Sample Output 1 :
+81
+Sample Input 2 :
+ 2 5
+Sample Output 2 :
+32
+
+
+
+Problem Description: You are given a number x and another number n. You have to print x (x n
+raised to the power n).
+For example, if x=3 and n=2 then, you have to print 9 ( 3 ). 2
+How to approach?
+1. Take x and n as input from the user.
+2. x^n basically means, multiplying x, n times. So, initialize an ans with 1.
+3. Now, run a loop until n becomes 0, and multiply x with ans each time.
+4. Print the final ans obtained.
+Pseudo code for this problem:
+Input = x
+Input= n
+ans=1
+While n is greater than 0:
+ ans=ans*x
+ Decrement n by 1
+Print(ans)
+❏ Let us dry run the code:
+ x=4 and n=2
+● ans =1
+● n=2(>0), so ans=1*4=4
+● n=1(>0), so ans=4*4=16
+● n=0(==0), so move out of the loop and we will print the ans
+● Output:
+16
+
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+          Scanner s=new Scanner(System.in);
+         int x=s.nextInt();//number
+         int n=s.nextInt();//power
+         int ans=1;
+         for(int i=1;i<=n;i++)
+         {
+              ans=ans*x;
+         }
+         System.out.println(ans);
+        
+        
+        
+    }
+}
