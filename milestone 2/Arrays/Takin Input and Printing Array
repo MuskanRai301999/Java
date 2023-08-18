@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        Scanner s =new Scanner(System.in);
+        //taking arr length5
+        int n = s.nextInt();
+        int arr[]=new int[n];
+        //taking input from the user
+        for(int i =0;i<n;i++){
+             System.out.print("Enter element at "+i+" th index");
+            arr[i]=s.nextInt();
+           
+        }
+        //printing the array
+        for(int i =0;i<n;i++){
+            System.out.println(arr[i]);
+        }
+      
+     }
+}
+
+6
+Enter element at 0 th index12
+Enter element at 1 th index14
+Enter element at 2 th index89
+Enter element at 3 th index5
+Enter element at 4 th index99
+Enter element at 5 th index20
+12
+14
+89
+5
+99
+20
